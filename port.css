@@ -1,0 +1,727 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@font-face {
+  font-family: 'nebularegular';
+  src: url("./font/nebula-regular-webfont.woff2") format("woff2"), url("font/nebula-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nebula_hollowregular';
+  src: url("font/nebula-hollow-webfont.woff2") format("woff2"), url("font/nebula-hollow-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  max-width: 2090px;
+  margin: 0 auto;
+  cursor: none;
+}
+a{
+  cursor: none;
+}
+
+.OHP, body, header, html {
+  height: 100%;
+}
+/* header */
+header{
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #00000082;
+}
+#aboutMeMain header{
+  height: min-content;
+}
+header video{
+  position: absolute;
+  top: 0;
+  left: -6rem;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+#barre_nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+}
+#aboutMeMain #barre_nav{
+  z-index: 2;
+  background-color: white;
+  position: fixed;
+  width: 95%;
+}
+#aboutMeMain header img{
+  width: 50px;
+}
+header img{
+  width: 100px;
+}
+header ul{
+  display: flex;
+  list-style-type: none;
+}
+header li{
+  font-size: 15px;
+  padding: 12px;
+}
+li span{
+  color: #f06161;
+}
+.contact{
+  border: 1px solid transparent;
+  background-color: #f06161;
+}
+.contact:hover{
+  background-color: red;
+}
+.list a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+#aboutMeMain .list a{
+  color: black;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+/* section 1 page d'acceuil */
+#section1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 30px;
+  position: relative;
+  font-family: 'Raleway',sans-serif;
+  color: #fff;
+  align-items: center;
+  height: 60%;
+}
+.hedaer_rs{
+  position: relative;
+  padding-left: 30px;
+}
+.text{
+  font-size: 20px;
+}
+.txt span{
+  text-transform: uppercase;
+  color: #f06161;
+}
+.txt h1{
+  text-transform: uppercase;
+}
+.txt p{
+  margin-top: 25px;
+  width: 45rem;
+  line-height: 35px;
+}
+.aPropos {
+  margin-top: 35px;
+}
+.aPropos input{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/* section 2 a propos de moi */
+#section2{
+  padding: 5rem 30px;
+  margin-top: 7rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f1fafb;
+}
+#section h2{
+  font-size: 30px;
+
+}
+.aboutMe{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutMe__txt{
+  width: 35rem;
+}
+.aboutMe h2{
+  padding-bottom: 10px;
+}
+.aboutMe span{
+  color: #f06161;
+}
+.aboutMe p{
+  width: 80%;
+  line-height: 30px;
+}
+.aboutMe figure{
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  width: 300px;
+  height: 360px;
+  border: 1rem solid #FFF;
+  overflow: hidden;
+}
+.aboutMe figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  object-position: top;
+  transition: all 0.5s ease-in-out;
+}
+.aboutMe figure img:hover{
+  transform: scale(1.2);
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.img_card a{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.img_card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.img_card img:hover{
+  transform: scale(1.2);
+}
+.titre_card{
+  padding: 10px 10PX;
+  display: flex;
+  justify-content: center;
+}
+/* section 3 sur les competences */
+#section3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 30px;
+  font-family: 'Raleway', sans-serif;
+}
+#section3 h2{
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+/* SECTION 3 LES COMPETENCES  */
+ 
+#section3 h2{
+  font-size: 20px;
+  padding-left: 0;
+ }
+.soft_skillz{
+  width: 100%;
+}
+.hard_skillz{
+  padding-left: 0;
+  padding-bottom: 15px;
+}
+.hard_liste{
+  display: flex;
+  width: 24rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 25px;
+
+}
+.soft_skillz{
+  width: 50%;
+}
+.soft_liste ul{
+list-style-type: none;
+}
+.soft_skillz li{
+  font-size: 20px;
+  padding: 12px;
+}
+.hard_skillz{
+  padding-left: 40px;
+}
+.hard_skillz img{
+  width: 100px;
+}
+#scss{
+  width: 95px;
+  margin-left: 5px;
+}
+/* section 4 les réalisations */
+#section4{
+  font-family: 'Raleway', sans-serif;
+  padding: 5rem 30px;
+  background-color: #f1fafb;
+
+}
+#section4 h2{
+  padding-bottom: 30px;
+}
+
+.ordre_card{
+  width: 21rem;
+}
+.img_card{
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+}
+.titre_card{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 10px;
+}
+/* footer */
+footer{
+  background-color: #2c3e50;
+  padding: 30px;
+  color: #f1fafb;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 30px;
+}
+footer a {
+  color: #f1fafb;
+}
+.footer_rs ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 32rem;
+}
+.footer_rs li{
+  list-style-type: none;
+}
+.cont p{
+  margin-top: 20px;
+}
+.flex{
+  display: flex;
+  padding-top: 5px;
+}
+.info_contact{
+  margin-top: 12px;
+  padding: 15px;
+ 
+}
+.flex p{
+  margin-left:10px;
+}
+/* ******************** MEDIA QUERIES ***************************/
+
+
+/* *************v tablet */
+
+@media screen and (min-width:767px) and (max-width:1020px){
+  /* EN TETE  */
+  header li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+  }
+  .text{
+    font-size:12px ;
+  }
+  .txt h1{
+    font-size: 30px;
+  }
+  /* SECTION 2 A PROPOS DE MOI */
+  #section2{
+    background-color: #f1fafb;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hard_liste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ************mobile l **************************** */
+
+@media screen and (min-width:424px) and (max-width:766px) {
+  /* HEADER */
+  #barre_nav{
+    flex-direction: column;
+    padding-bottom: 0;
+ }
+ #aboutMeMain #barre_nav{
+  width: 100%;
+  padding: 30px 0;
+ }
+ .logo{
+    display: flex;
+    justify-content: center;
+ }
+ .list{
+  justify-content: center;
+ }
+ .list ul{
+    flex-direction: column;
+    align-items: center;
+ }
+ /* LA SECTION 1 */
+#section1{
+  padding: 7px;
+  height: 50%;
+}
+.aPropos input{
+  font-size: 13px;
+}
+.text{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+ .text h1{
+  font-size: 20px;
+ }
+ /* LA SECTION 2 */
+ #section2{
+    flex-direction: column;
+    padding-top: 120px;
+ }
+ .aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .aboutMe p{
+  width: 100%;
+ }
+ .aboutMe figure{
+  margin-top: 2rem;
+ }
+ .aboutMe__txt{
+  width: 100%;
+ }
+
+ /* SECTION 3 LES COMPETENCES  */
+ #section3{
+  display:flex;
+  flex-direction: column;
+  row-gap: 5rem;
+ }
+  .soft_skillz{
+    width: 100%;
+  }
+  .hard_skillz{
+    padding-left: 0;
+    padding-bottom: 15px;
+  }
+  
+ /* SECTION 4 LES réalisations  */
+ #section4 h2{
+  text-align: center;
+ }
+ .footer_rs{
+  width: 100%;
+ }
+ .footer_rs ul{
+  width: 100%;
+ }
+}
+
+/* **********mobile m 375 *************** */
+
+@media screen and (min-width:374px) and (max-width:423px) {
+    /* HEADER */
+    #barre_nav{
+      flex-direction: column;
+      padding-bottom: 0;
+   }
+   #aboutMeMain #barre_nav{
+    width: 100%;
+    padding: 30px 0;
+   }
+   .logo{
+      display: flex;
+      justify-content: center;
+   }
+   .list{
+    justify-content: center;
+   }
+   .list ul{
+      flex-direction: column;
+      align-items: center;
+   }
+   /* LA SECTION 1 */
+  #section1{
+    padding: 7px;
+    height: 50%;
+  }
+  .text{
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+   .text h1{
+    font-size: 20px;
+   }
+   /* LA SECTION 2 */
+   #section2{
+      flex-direction: column;
+      padding-top: 120px;
+   }
+   .aboutMe{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .aboutMe p{
+    width: 100%;
+   }
+   .ordre_card{
+    width: 100%;
+    margin-right: 0;
+    margin-top: 10px;
+   }
+   .img_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   /* SECTION 3 LES COMPETENCES  */
+    .soft_skillz{
+      width: 100%;
+    }
+    .hard_skillz{
+      padding-left: 0;
+      padding-bottom: 15px;
+    }
+    /* SECTION 3 LES COMPETENCES  */
+  #section3{
+    display:flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+  .footer_rs{
+    width: 100%;
+  }
+  .footer_rs ul{
+    width: 100%;
+  }
+  .hard_liste{
+    width: 100%;
+  }
+}
+
+/************** mobile s ****************/
+@media screen and (min-width:319px) and (max-width: 424px) {
+  /* HEADER */
+  #barre_nav{
+    flex-direction: column;
+    padding-bottom: 0;
+ }
+ #aboutMeMain #barre_nav{
+  width: 100%;
+  padding: 30px 0;
+ }
+ .logo{
+    display: flex;
+    justify-content: center;
+ }
+ .list{
+  justify-content: center;
+ }
+ .list ul{
+    flex-direction: column;
+    align-items: center;
+ }
+ /* LA SECTION 1 */
+#section1{
+  padding: 7px;
+  height: 50%;
+}
+.aPropos input{
+  font-size: 13px;
+}
+.text{
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+ .text h1{
+  font-size: 18px;
+ }
+ /* LA SECTION 2 */
+ #section2{
+    flex-direction: column;
+    padding-top: 120px;
+ }
+ .aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .aboutMe  h2{
+  font-size: 20px;
+}
+ .aboutMe p{
+  width: 100%;
+  font-size: 14px;
+ }
+ .aboutMe__txt{
+  width: 100%;
+ }
+ 
+ .ordre_card{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 10px;
+ }
+ .img_card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+ /* SECTION 3 LES COMPETENCES  */
+  
+   #section3 h2{
+    font-size: 20px;
+    padding-left: 0;
+   }
+  .soft_skillz{
+    width: 100%;
+  }
+  .hard_skillz{
+    padding-left: 0;
+    padding-bottom: 15px;
+  }
+  .hard_liste{
+    /* display: flex; */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* SECTION 4 LES PROJETS */
+  #section4 h2{
+    font-size: 20px;
+    text-align: center;
+  }
+  /* SECTION 3 LES COMPETENCES  */
+ #section3{
+  display:flex;
+  flex-direction: column;
+  row-gap: 5rem;
+ }
+ .footer_rs{
+  width: 100%;
+ }
+ .footer_rs ul{
+  width: 100%;
+ }
+ 
+} 
+ 
+  .cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+  }
+  .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+  }
+  .cursor-dot,.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  /* about me et project */
+  #aboutMeMain .cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+  }
+  #aboutMeMain .cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.253);
+  }
+  #aboutMeMain .cursor-dot,.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 3;
+    pointer-events: none;
+  }
+  #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f06161;
+    color: #fff;
+    border: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover {
+    background-color: red;
+}
+#downloadCvButton {
+  background: transparent;
+  border: transparent;
+}
