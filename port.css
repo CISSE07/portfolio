@@ -53,7 +53,6 @@ header{
 header video{
   position: absolute;
   top: 0;
-  left: -6rem;
   min-width: 100%;
   min-height: 100%;
   width: auto;
