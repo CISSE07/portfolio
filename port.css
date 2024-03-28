@@ -64,13 +64,13 @@ header video{
   padding: 30px;
   position: relative;
 }
-#aboutMeMain #barre_nav{
+#aboutMeMain #barre_nav,#contactMeMain #barre_nav{
   z-index: 2;
   background-color: white;
   position: fixed;
   width: 95%;
 }
-#aboutMeMain header img{
+#aboutMeMain header img, #contactMeMain header img{
   width: 50px;
 }
 header img{
@@ -100,7 +100,7 @@ li span{
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
-#aboutMeMain .list a{
+#aboutMeMain .list a,#contactMeMain .list a{
   color: black;
 }
 
@@ -686,17 +686,17 @@ footer a {
     pointer-events: none;
   }
   /* about me et project */
-  #aboutMeMain .cursor-dot{
+  #aboutMeMain .cursor-dot,#contactMeMain  .cursor-dot{
     width: 5px;
     height: 5px;
     background-color: black;
   }
-  #aboutMeMain .cursor-outline{
+  #aboutMeMain .cursor-outline, #contactMeMain  .cursor-outline{
     width: 30px;
     height: 30px;
     border: 2px solid rgba(0, 0, 0, 0.253);
   }
-  #aboutMeMain .cursor-dot,.cursor-outline{
+  #aboutMeMain .cursor-dot,.cursor-outline, #contactMeMain .cursor-dot,.cursor-outline{
     position: fixed;
     top: 0;
     left: 0;
